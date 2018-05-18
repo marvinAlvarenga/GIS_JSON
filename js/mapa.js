@@ -54,3 +54,8 @@ var ct1 = L.control.layers.tree(baseTree, null, {
 ct1.addTo(map).collapseTree().expandSelected();
 
 ct1.setOverlayTree(indicadores).collapseTree(true).expandSelected();
+
+L.control.scale({
+    imperial: true
+  }
+  ).addTo(map);
